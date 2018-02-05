@@ -51,4 +51,7 @@ echo
 psql --username postgres -c "CREATE DATABASE docker TEMPLATE template0 ENCODING = 'UTF8' ;"
 echo
 
+psql --username postgres -d docker -f /home/postgres/*.sql
+echo
+
 wait $!
